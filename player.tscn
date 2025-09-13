@@ -4,7 +4,7 @@
 [ext_resource type="SpriteFrames" uid="uid://fls5e6c5wwan" path="res://YellowPlayer.tres" id="2_onrkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
-size = Vector2(10, 16)
+size = Vector2(20, 24)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_onrkg")
@@ -20,5 +20,4 @@ autoplay = "Run"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_hqtel")

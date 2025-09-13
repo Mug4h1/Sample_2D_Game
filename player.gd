@@ -48,19 +48,20 @@ func _physics_process(delta: float) -> void:
 # Defined: speed when the character falls
 func apply_gravity():
 	velocity.y += GRAVITY
+	velocity.y = min(velocity.y, 100)
 
 
 # Defined: speed and animation when character moves (left or right)
 func apply_acceleration(input):
 	velocity.x = move_toward(velocity.x, MAX_SPEED * input, ACCELERATION)
 
+	animatedSprite.play("Run")
 	# character is moving left
 	if input < 0:
 		animatedSprite.flip_h = false
 	# character is moving right
 	else:
 		animatedSprite.flip_h = true
-	animatedSprite.animation = "Run"
 
 
 # Defined: speed(0) and animation when character is not moving
