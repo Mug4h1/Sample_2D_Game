@@ -46,6 +46,11 @@ texture={
 "roughness/src_normal": ""
 }
 
+[layer_names]
+
+2d_physics/layer_1="World"
+2d_physics/layer_2="Characters"
+
 [rendering]
 
 2d/snap/snap_2d_transforms_to_pixel=true

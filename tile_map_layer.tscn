@@ -180,6 +180,7 @@ texture_region_size = Vector2i(18, 18)
 [sub_resource type="TileSet" id="TileSet_uuaxm"]
 tile_size = Vector2i(18, 18)
 physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 3
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "SnowTiles"
 terrain_set_0/terrain_0/color = Color(0.66314, 0.0196689, 0.518371, 1)

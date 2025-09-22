@@ -57,12 +57,8 @@ func apply_acceleration(input):
 	velocity.x = move_toward(velocity.x, MAX_SPEED * input, ACCELERATION)
 
 	animatedSprite.play("Run")
-	# character is moving left
-	if input < 0:
-		animatedSprite.flip_h = false
-	# character is moving right
-	else:
-		animatedSprite.flip_h = true
+	# character is moving right or left
+	animatedSprite.flip_h = input > 0
 
 
 # Defined: speed(0) and animation when character is not moving
